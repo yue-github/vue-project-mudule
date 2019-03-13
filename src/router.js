@@ -4,7 +4,7 @@ import Home from './views/home.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -63,3 +63,9 @@ export default new Router({
   mode:"history"
     
 })
+
+router.beforeEach((to, from, next) => {
+  console.log(to.name)
+  next()  
+})
+export default router;
