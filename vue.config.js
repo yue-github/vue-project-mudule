@@ -1,5 +1,6 @@
 module.exports={
 	baseUrl:"/",
+	publicPath:'./',
 	outputDir:"dist2",
 	assetsDir:"assets",
 	lintOnSave:false,

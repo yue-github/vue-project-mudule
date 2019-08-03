@@ -10,7 +10,7 @@ const router = new Router({
       path: '/',
       name: 'home',
       component: Home,
-      redirect:'/fixed'
+      redirect:'/task'
     },
     {
       path:'/fixed',
@@ -57,10 +57,15 @@ const router = new Router({
       name:'Echarts',
       component:()=>import ('./views/ec/Echarts')
     },
+    {
+      path:'/task',
+      name:'task',
+      component:()=>import ('./views/task')
+    }
 
      
-  ],
-  mode:"history"
+  ]
+  
     
 })
 

@@ -7,5 +7,14 @@ export function test(arg){
         	mobile:arg
         }
      })
-      
+}
+export function gdmzd(msg){
+	return request({
+        url:"/gdmzdTest",
+        method:'post',
+        data:{
+        	msg:msg
+        }
+     })
+       
 }
