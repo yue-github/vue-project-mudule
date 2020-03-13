@@ -19,7 +19,6 @@ const service = axios.create({
 service.interceptors.request.use(
   config => {
     if (store.getters.token) {
-      console.log('token进来了')
       config.headers.Authorization = 'Bearer '+getToken('just');
       // config.headers['X-Token'] = 'Bearer '+ getToken('just')// 让每个请求携带自定义token 请根据实际情况自行修改
     }
@@ -35,9 +34,6 @@ service.interceptors.request.use(
 service.interceptors.response.use(
   response => {
        return response.data
-  },
-  error => {
-     console.log(error)
   }
 )
 

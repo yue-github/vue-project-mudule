@@ -14,6 +14,7 @@ export default {
      
     }
   },
+  
   components: {
     
   },
@@ -31,15 +32,7 @@ export default {
  
   },
   mounted(){
-     this.$axios.post('http://localhost/voy/public/api/test',{
-           phone: '18814137320',
-           password: 'wutongyue'
-
-     })
-     .then(res=>{
-        console.log(res);
-     })
-    // this.$store.dispatch('TEST','18814137320')
+    // this.$store.dispatch('SENDCODE','18814137320')
     // .then(res=>{
     //    cfunconsole.log(res)
     // })

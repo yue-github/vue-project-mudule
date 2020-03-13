@@ -21,7 +21,7 @@ export default {
       this.$router.push({
         name:'that',
         params:{
-          name:'lowingshan'
+          name:'low'
         }
       });
     }

@@ -7,10 +7,20 @@ Vue.use(Router)
 const router = new Router({
   routes: [
     {
+      path:'/payOrder',
+      name:'payOrder',
+      component:_=>import('./components/pay/wxpay')
+    },
+    {
+      path:'/alipay',
+      name:'alipay',
+      component:_=>import('./components/pay/alipay')
+    },
+    {
       path: '/',
       name: 'home',
       component: Home,
-      redirect:'/task'
+      redirect:'/payOrder'
     },
     {
       path:'/fixed',
@@ -69,8 +79,5 @@ const router = new Router({
     
 })
 
-router.beforeEach((to, from, next) => {
-  console.log(to.name)
-  next()  
-})
+ 
 export default router;

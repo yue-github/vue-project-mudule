@@ -12,7 +12,6 @@ import axios from './utils/request'
 Vue.prototype.$axios=axios;
 Vue.prototype.$=$
 Vue.config.productionTip = false
-
 new Vue({
   router,
   store,

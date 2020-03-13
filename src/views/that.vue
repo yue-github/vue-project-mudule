@@ -15,6 +15,9 @@ export default {
       takeData:''
   	}
   },
+  beforeRouteLeave(){
+    console.log(123)
+  },
   components: {
     
   },
