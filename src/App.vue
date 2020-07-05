@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+      <div class="saqq">sass</div>
        <router-view/>
+       <router-view name="hehe"/>
   </div>
 </template>
 
@@ -26,9 +28,6 @@ export default {
 }
 </script>
 
-<style>
-#app {
- padding:0;
- margin:0;
-}
+<style lang="sass" scoped>
+ 
 </style>

@@ -29,7 +29,7 @@ export default {
       // },
       // 测试springboot
       payOrder(){
-          this.$axios.post("http://localhost/coral3/wxpayPC",{id:1,price:this.price})
+          this.$axios.post("http://localhost/coral3/Qrcode/create",{id:1,price:this.price})
           .then(res=>{ 
             // this.Qrcode = res.url;
             // let bytes = new Uint8Array(res);

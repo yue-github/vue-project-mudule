@@ -17,10 +17,21 @@ const router = new Router({
       component:_=>import('./components/pay/alipay')
     },
     {
+      path:'/upload/:id',
+      name:'upload',
+      components:{
+        hehe:()=>import('./components/uikit/upload')
+      },
+      props: {
+       hehe:true
+      },
+      component:_=>import('./components/uikit/upload')
+    },
+    {
       path: '/',
       name: 'home',
       component: Home,
-      redirect:'/payOrder'
+      redirect:'/Echarts'
     },
     {
       path:'/fixed',
@@ -46,7 +57,6 @@ const router = new Router({
       name:'that',
       component:()=>import('./views/that')
     },
-
     {
       path:"*",
       redirect:"/"
@@ -72,6 +82,7 @@ const router = new Router({
       name:'task',
       component:()=>import ('./views/task')
     }
+    
 
      
   ]
